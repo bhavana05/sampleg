@@ -2,7 +2,7 @@
 
 #### What is PHP?
 
-	PHP is a open source, interpreted and object-oriented scripting language i.e. executed at server side. It is used to develop web applications (an application i.e. executed at server side and generates dynamic page).
+PHP is a open source, interpreted and object-oriented scripting language i.e. executed at server side. It is used to develop web applications (an application i.e. executed at server side and generates dynamic page).
 
 * PHP is a server side scripting language.
 
@@ -29,11 +29,11 @@
 
 5. Embedded: PHP code can be easily embedded within HTML tags and script.
 
-	First, we need to update our local package index to make sure we have a fresh list of the available packages. Then we can install the necessary components.
+First, we need to update our local package index to make sure we have a fresh list of the available packages. Then we can install the necessary components.
 
 $ sudo apt-get update
 
-#### step-1:Installing PHP 5.6
+* #### Step-1:Installing PHP 5.6
 
 To install PHP, first you need to install Apache and MySql.
 Now download php using the below commands.
@@ -43,9 +43,9 @@ $ sudo apt-get update
 $ sudo apt-get install -y php5.6 php5.6-mcrypt php5.6-gd
 
 #### What is Apache2?
-	Apache is the most popular Web server software. It enables a computer to host one or more websites that can be accessed over the Internet using a Web browser. Most Apache installations include a URL rewriting module called "mod_rewrite," which has become a common way for webmasters to create custom URLs.
+Apache is the most popular Web server software. It enables a computer to host one or more websites that can be accessed over the Internet using a Web browser. Most Apache installations include a URL rewriting module called "mod_rewrite," which has become a common way for webmasters to create custom URLs.
 
-#### step-2:Installing Apache2
+* #### Step-2:Installing Apache2
 
 To install Apache2, use the following command
 
@@ -53,17 +53,17 @@ $ apt-get install apache2 libapache2-mod-php5
 
 #### What is MySQL?
 
-	MySQL is a fast, easy-to-use RDBMS being used for many small and big businesses. It handles a large subset of the functionality of the most expensive and powerful database packages.
+MySQL is a fast, easy-to-use RDBMS being used for many small and big businesses. It handles a large subset of the functionality of the most expensive and powerful database packages.
 
-1.MySQL uses a standard form of the well-known SQL data language.
+1. MySQL uses a standard form of the well-known SQL data language.
 
-2.MySQL works on many operating systems and with many languages including PHP, PERL, C, C++, JAVA, etc.
+2. MySQL works on many operating systems and with many languages including PHP, PERL, C, C++, JAVA, etc.
 
-3.MySQL works very quickly and works well even with large data sets.
+3. MySQL works very quickly and works well even with large data sets.
 
-4.MySQL is very friendly to PHP, the most appreciated language for web development.
+4. MySQL is very friendly to PHP, the most appreciated language for web development.
 
-#### step-3:Installing MySQL
+#### Step-3:Installing MySQL
 
 To install MySql, use the below command
 
@@ -89,7 +89,7 @@ $ sudo chmod +x /usr/local/bin/composer
 #### what is Laravel?
 	Laravel is a free, open-source PHP web framework, created for the development of web applications following the model–view–controller (MVC) architectural pattern. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance.
 
-#### Step 5 – Installing Laravel
+#### Step-5:Installing Laravel
 
 Now download laravel using composer.
 $ cd /var/www
@@ -106,7 +106,7 @@ $ chown -R www-data.www-data /var/www/laravel
 $ chmod -R 755 /var/www/laravel
 $ chmod -R 777 /var/www/laravel/app/storage
 
-#### Step 6:Set Encryption Key
+#### Step-6:Set Encryption Key
 
 Now set the 32 bit long random number encryption key, which used by the Illuminate encrypter service.
 
