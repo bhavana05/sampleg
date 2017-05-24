@@ -43,13 +43,14 @@ $ sudo apt-get update
 $ sudo apt-get install -y php5.6 php5.6-mcrypt php5.6-gd
 ```
 #### What is Apache2?
+
  Apache is the most popular Web server software. It enables a computer to host one or more websites that can be accessed over the Internet using a Web browser. Most Apache installations include a URL rewriting module called "mod_rewrite," which has become a common way for webmasters to create custom URLs.
 
 * #### Step-2:Installing Apache2
 
 To install Apache2, use the following command
 
-$ apt-get install apache2 libapache2-mod-php5
+```$ apt-get install apache2 libapache2-mod-php5```
 
 #### What is MySQL?
 
@@ -66,51 +67,54 @@ $ apt-get install apache2 libapache2-mod-php5
 * #### Step-3:Installing MySQL
 
 To install MySql, use the below command
-
-$ apt-get install mysql-server php5.6-mysql
+```
+$ apt-get install mysql-server php5.6-mysql```
 
 If there is any error in connecting MySql to PHP:
  Check if etc/mysql.my.cnf file has [mysqld] line.
 
 If mbstring missing error occurs:
- then follow the below command
- $sudo apt-get install php-mbstring
+Then follow the below command
+```$sudo apt-get install php-mbstring```
  
 #### What is Composer?
-	Composer is not a package Manager.It is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+
+Composer is not a package Manager.It is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
 * #### Step-4:Installing Composer
 install by using following commands
-
+```
 $ curl -sS https://getcomposer.org/installer | php
 $ sudo mv composer.phar /usr/local/bin/composer
-$ sudo chmod +x /usr/local/bin/composer
+$ sudo chmod +x /usr/local/bin/composer```
 
 #### What is Laravel?
-	Laravel is a free, open-source PHP web framework, created for the development of web applications following the model–view–controller (MVC) architectural pattern. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance.
+
+Laravel is a free, open-source PHP web framework, created for the development of web applications following the model–view–controller (MVC) architectural pattern. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance.
 
 * #### Step-5:Installing Laravel
 
 Now download laravel using composer.
+```
 $ cd /var/www
-$ git clone https://github.com/laravel/laravel.git
+$ git clone https://github.com/laravel/laravel.git```
 
 Navigate to Laravel code directory and use composer to install all dependencies required for Laravel framework.
-
+```
 $ cd /var/www/laravel
-$ sudo composer install
+$ sudo composer install```
 
 Dependencies installation will take some time. After than set proper permissions on files.
-
+```
 $ chown -R www-data.www-data /var/www/laravel
 $ chmod -R 755 /var/www/laravel
-$ chmod -R 777 /var/www/laravel/app/storage
+$ chmod -R 777 /var/www/laravel/app/storage```
 
 * #### Step-6:Set Encryption Key
 
 Now set the 32 bit long random number encryption key, which used by the Illuminate encrypter service.
-
-$ php artisan key:generate
+```
+$ php artisan key:generate```
 
 Output may look like this: Application key [uOHTNu3Au1Kt7Uloyr2Py9blU0J5XQ75] set successfully.
 
@@ -123,6 +127,6 @@ Now edit config/app.php configuration file and update above generated applicatio
 * #### Step-7:local Development Server
 
  You have PHP installed locally and you would like to use PHP's built-in development server to serve your application, you may use the serve Artisan command. This command will start a development server at http://localhost:8000:
-
-$ php artisan serve
+```
+$ php artisan serve```
 
