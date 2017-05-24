@@ -2,7 +2,7 @@
 
 #### What is PHP?
 
-PHP is a open source, interpreted and object-oriented scripting language i.e. executed at server side. It is used to develop web applications (an application i.e. executed at server side and generates dynamic page).
+ PHP is a open source, interpreted and object-oriented scripting language i.e. executed at server side. It is used to develop web applications (an application i.e. executed at server side and generates dynamic page).
 
 * PHP is a server side scripting language.
 
@@ -31,19 +31,19 @@ PHP is a open source, interpreted and object-oriented scripting language i.e. ex
 
 First, we need to update our local package index to make sure we have a fresh list of the available packages. Then we can install the necessary components.
 
-$ sudo apt-get update
+```$ sudo apt-get update```
 
 * #### Step-1:Installing PHP 5.6
 
 To install PHP, first you need to install Apache and MySql.
 Now download php using the below commands.
-
+```
 $ sudo add-apt-repository ppa:ondrej/php
 $ sudo apt-get update
 $ sudo apt-get install -y php5.6 php5.6-mcrypt php5.6-gd
-
+```
 #### What is Apache2?
-Apache is the most popular Web server software. It enables a computer to host one or more websites that can be accessed over the Internet using a Web browser. Most Apache installations include a URL rewriting module called "mod_rewrite," which has become a common way for webmasters to create custom URLs.
+ Apache is the most popular Web server software. It enables a computer to host one or more websites that can be accessed over the Internet using a Web browser. Most Apache installations include a URL rewriting module called "mod_rewrite," which has become a common way for webmasters to create custom URLs.
 
 * #### Step-2:Installing Apache2
 
@@ -53,7 +53,7 @@ $ apt-get install apache2 libapache2-mod-php5
 
 #### What is MySQL?
 
-MySQL is a fast, easy-to-use RDBMS being used for many small and big businesses. It handles a large subset of the functionality of the most expensive and powerful database packages.
+ MySQL is a fast, easy-to-use RDBMS being used for many small and big businesses. It handles a large subset of the functionality of the most expensive and powerful database packages.
 
 1. MySQL uses a standard form of the well-known SQL data language.
 
@@ -63,7 +63,7 @@ MySQL is a fast, easy-to-use RDBMS being used for many small and big businesses.
 
 4. MySQL is very friendly to PHP, the most appreciated language for web development.
 
-#### Step-3:Installing MySQL
+* #### Step-3:Installing MySQL
 
 To install MySql, use the below command
 
@@ -79,17 +79,17 @@ If mbstring missing error occurs:
 #### What is Composer?
 	Composer is not a package Manager.It is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
-#### Step-4:Installing Composer
+* #### Step-4:Installing Composer
 install by using following commands
 
 $ curl -sS https://getcomposer.org/installer | php
 $ sudo mv composer.phar /usr/local/bin/composer
 $ sudo chmod +x /usr/local/bin/composer
 
-#### what is Laravel?
+#### What is Laravel?
 	Laravel is a free, open-source PHP web framework, created for the development of web applications following the model–view–controller (MVC) architectural pattern. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance.
 
-#### Step-5:Installing Laravel
+* #### Step-5:Installing Laravel
 
 Now download laravel using composer.
 $ cd /var/www
@@ -106,7 +106,7 @@ $ chown -R www-data.www-data /var/www/laravel
 $ chmod -R 755 /var/www/laravel
 $ chmod -R 777 /var/www/laravel/app/storage
 
-#### Step-6:Set Encryption Key
+* #### Step-6:Set Encryption Key
 
 Now set the 32 bit long random number encryption key, which used by the Illuminate encrypter service.
 
@@ -120,7 +120,7 @@ Now edit config/app.php configuration file and update above generated applicatio
 
 'cipher' => 'AES-256-CBC',
 
-#### Step-7:local Development Server
+* #### Step-7:local Development Server
 
  You have PHP installed locally and you would like to use PHP's built-in development server to serve your application, you may use the serve Artisan command. This command will start a development server at http://localhost:8000:
 
