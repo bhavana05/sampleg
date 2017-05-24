@@ -85,10 +85,11 @@ Composer is not a package Manager.It is a tool for dependency management in PHP.
 
 * #### Step-4:Installing Composer
 Install by using following commands
-
-```$ curl -sS https://getcomposer.org/installer | php
+```
+$ curl -sS https://getcomposer.org/installer | php
 $ sudo mv composer.phar /usr/local/bin/composer
-$ sudo chmod +x /usr/local/bin/composer```
+$ sudo chmod +x /usr/local/bin/composer
+```
 
 #### What is Laravel?
 
@@ -98,19 +99,25 @@ Laravel is a free, open-source PHP web framework, created for the development of
 
 Now download laravel using composer.
 
-```$ cd /var/www
-$ git clone https://github.com/laravel/laravel.git```
+```
+$ cd /var/www
+$ git clone https://github.com/laravel/laravel.git
+```
 
 Navigate to Laravel code directory and use composer to install all dependencies required for Laravel framework.
 
-```$ cd /var/www/laravel
-$ sudo composer install```
+```
+$ cd /var/www/laravel
+$ sudo composer install
+```
 
 Dependencies installation will take some time. After than set proper permissions on files.
 
-```$ chown -R www-data.www-data /var/www/laravel
+```
+$ chown -R www-data.www-data /var/www/laravel
 $ chmod -R 755 /var/www/laravel
-$ chmod -R 777 /var/www/laravel/app/storage```
+$ chmod -R 777 /var/www/laravel/app/storage
+```
 
 * #### Step-6:Set Encryption Key
 
