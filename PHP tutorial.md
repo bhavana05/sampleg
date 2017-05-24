@@ -71,11 +71,12 @@ To install MySql, use the below command
 ```$ apt-get install mysql-server php5.6-mysql```
 
 If there is any error in connecting MySql to PHP:
- Check if etc/mysql.my.cnf file has [mysqld] line.
+
+* Check if etc/mysql.my.cnf file has [mysqld] line.
 
 If mbstring missing error occurs:
 
-Then follow the below command
+* Then follow the below command
 ```$sudo apt-get install php-mbstring```
  
 #### What is Composer?
@@ -83,7 +84,7 @@ Then follow the below command
 Composer is not a package Manager.It is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
 * #### Step-4:Installing Composer
-install by using following commands
+Install by using following commands
 
 ```$ curl -sS https://getcomposer.org/installer | php
 $ sudo mv composer.phar /usr/local/bin/composer
