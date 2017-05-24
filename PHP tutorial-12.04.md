@@ -31,7 +31,7 @@
 
 First, we need to update our local package index to make sure we have a fresh list of the available packages. Then we can install the necessary components.
 
-```$ spt-get update```
+```$ apt-get update```
 
 * #### Step-1:Installing PHP 5.6
 
