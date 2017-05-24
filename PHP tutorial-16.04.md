@@ -96,6 +96,7 @@ $ sudo mv composer.phar /usr/local/bin/composer
 $ sudo chmod +x /usr/local/bin/composer
 ```
 * Note:If mbstring missing error occurs, then follow the below command
+
 ```$sudo apt-get install php5.6-mbstring php5.6-dom```
 
 #### What is Laravel?
