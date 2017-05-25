@@ -33,7 +33,7 @@ First, we need to update our local package index to make sure we have a fresh li
 
 ```$ apt-get update```
 
-* #### Step-1:Installing PHP 5.6
+* ### Step-1:Installing PHP 5.6
 
 To install PHP, first you need to install Apache and MySql.
 Now download php using the below commands.
@@ -56,7 +56,7 @@ $ apt-get install python-software-properties
 
  Apache is the most popular Web server software. It enables a computer to host one or more websites that can be accessed over the Internet using a Web browser. Most Apache installations include a URL rewriting module called "mod_rewrite," which has become a common way for webmasters to create custom URLs.
 
-* #### Step-2:Installing Apache2
+* ### Step-2:Installing Apache2
 
 To install Apache2, use the following command
 
@@ -74,7 +74,7 @@ To install Apache2, use the following command
 
 4. MySQL is very friendly to PHP, the most appreciated language for web development.
 
-* #### Step-3:Installing MySQL
+* ### Step-3:Installing MySQL
 
 To install MySql, use the below command
 
@@ -88,7 +88,7 @@ If there is any error in connecting MySql to PHP:
 
 Composer is not a package Manager.It is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
-* #### Step-4:Installing Composer
+* ### Step-4:Installing Composer
 Install by using following commands
 ```
 $ curl -sS https://getcomposer.org/installer | php
@@ -103,7 +103,7 @@ $ chmod +x /usr/local/bin/composer
 
 Laravel is a free, open-source PHP web framework, created for the development of web applications following the model–view–controller (MVC) architectural pattern. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance.
 
-* #### Step-5:Installing Laravel
+* ### Step-5:Installing Laravel
 
 Now download laravel using composer.
 
@@ -128,7 +128,7 @@ $ chmod -R 755 /var/www/laravel
 $ chmod -R 777 /var/www/laravel/app/storage
 ```
 
-* #### Step-6:Set Encryption Key
+* ### Step-6:Set Encryption Key
 
 Now set the 32 bit long random number encryption key, which used by the Illuminate encrypter service.
 
@@ -142,9 +142,13 @@ Now edit config/app.php configuration file and update above generated applicatio
 
 'cipher' => 'AES-256-CBC',
 
-* #### Step-7:local Development Server
+* ### Step-7:local Development Server
 
  You have PHP installed locally and you would like to use PHP's built-in development server to serve your application, you may use the serve Artisan command. This command will start a development server at http://localhost:8000:
 
 ```$ php artisan serve```
+
+Your output will look like this
+
+![Output](output.png)
 
