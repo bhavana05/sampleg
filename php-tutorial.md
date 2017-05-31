@@ -53,18 +53,17 @@ Single-line comment:
    <?
    # This is a comment, and
    # This is the second line of the comment
-   
    // This is a comment too. Each style comments only
    ?>
 Multi-line comment:
       They are generally used to provide pseudocode algorithms and more detailed explanations when necessary. The multiline style of commenting is the same as in C. Here are the example of multi lines comments.
 Example:
-		<?
-   		/* This is a comment with multiline
+	<?
+   	/* This is a comment with multiline
       	Author : Mohammad Mohtashim
       	Purpose: Multiline Comments Demo
       	Subject: PHP
-   		*/
+   	*/
       	?>
 
 PHP variables
@@ -104,6 +103,50 @@ Constant function example:
    echo MINSIZE;
    echo constant("MINSIZE"); // same thing as the previous line
 ?>
+
+Operator Types:
+PHP language supports following type of operators.
+Arithmetic Operators 
+Comparison Operators 
+Bitwise Operators 
+Logical Operators 
+String Operators 
+Incrementing/Decrementing Operators 
+Array Operators 
+Type Operators 
+Execution Operators 
+Error Control Operators 
+Assignment Operators 
+We can also categorize operators on behalf of operands. They can be categorized in 3 forms:
+Unary Operators: works on single operands such as ++, -- etc. 
+Binary Operators: works on two operands such as binary +, -, *, / etc. 
+Ternary Operators: works on three operands such as "?:". 
+
+Operator
+Description
+Example
++
+Adds two operands
+A + B will give 30
+-
+Subtracts second operand from the first
+A - B will give -10
+*
+Multiply both operands
+A * B will give 200
+/
+Divide numerator by de-numerator
+B / A will give 2
+%
+Modulus Operator and remainder of after an integer division
+B % A will give 0
+++
+Increment operator, increases integer value by one
+A++ will give 11
+--
+Decrement operator, decreases integer value by one
+A-- will give 9
+
 
 
 
