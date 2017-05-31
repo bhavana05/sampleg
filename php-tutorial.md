@@ -122,6 +122,10 @@ Unary Operators: works on single operands such as ++, -- etc.
 Binary Operators: works on two operands such as binary +, -, *, / etc. 
 Ternary Operators: works on three operands such as "?:". 
 
+| Operator | Description | Example |
+| ----------  |  ------------- |   --------- |
+| +| adds |A+B|
+
 Operator
 Description
 Example
