@@ -2,7 +2,7 @@
 
 Converting a data type into another is known as type casting. Sometimes there is a need to convert the data type of one value to another.
 
-#### The typeof Operator:
+### The typeof Operator:
 
 You can use the JavaScript typeof operator to find the type of a JavaScript variable.
 The typeof operator returns the type of a variable or an expression.
@@ -30,7 +30,7 @@ string
 string
 number
 ```
-#### Converting to Boolean
+### Converting to Boolean
 
 To convert a value to boolean data type, just pass the value to Boolean function.
 
@@ -46,7 +46,7 @@ b = Boolean(b);
 document.write(b + " : " + typeof b); //outputs true : boolean
 </script>
 ```
-#### Converting to String
+### Converting to String
 
 To convert a value to string data type, just pass the value to String function.
 
@@ -62,7 +62,7 @@ s= String(s);
 document.write(s + " : " + typeof s); //outputs 1 : string
 </script>
 ```
-#### Converting to Number
+### Converting to Number
 
 Many times string needs to get converted into numbers. To convert a value to number data type, just pass the value to Number function.
 
@@ -91,7 +91,7 @@ true is represented as 1 in numeric so n1 after conversion stores value 1.
 "1str" after conversion doesn't represent a valid number that's why the output is NaN. NaN means not a number. Its a language construct.
 "123" after conversion represents valid number 123.
 
-#### ParseInt
+### ParseInt
 
 parseInt() function is used to convert strings values into numbers. It works differently than Number() function. It doesn't work for boolean or other data-types values. For others values or string that doesn't contain numbers in it, parseInt() will just output NaN. Examples will clear this idea.
 
@@ -120,7 +120,7 @@ document.write(n3 + " : " + typeof n4); //outputs 123 : number
 document.write("<br />");
 </script>
 ```
-#### parseFloat
+### parseFloat
 
 parseFloat() function is used to convert strings values into floating point numbers. It works similar to parseInt() function with an exception of handling decimal point numbers. For example, 1.23 is represented as 123e-2. parseInt("123e-2") will result in 123 but parseFloat("123e-2") will give 1.23.
 
