@@ -35,9 +35,7 @@ number
 To convert a value to boolean data type, just pass the value to Boolean function.
 
 Syntax:
-```
-Boolean(value);
-```
+```Boolean(value);```
 **Example**
 ```
 <script>
